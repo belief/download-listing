@@ -1,0 +1,107 @@
+* {	padding:0;	margin:0; }
+
+body { color: #333;	padding: 50px 15px 15px 15px; background: #f7f7f7; -webkit-font-smoothing: antialiased; margin: auto;}
+
+h1 { text-align: left; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;	text-transform: none=; font-weight: 700;	 font-size: 25px; color: #282828; }
+
+.heading { padding: 25px 0 15px 0; }
+
+#container { position: relative; width: 800px; margin:auto; }
+
+table {	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; background-color: #b5b5b5; border-collapse: collapse; width: 100%; margin: 10px 0; font-size: 12px; }
+
+.copyright { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px; color:#666; text-align: left; margin-top: 25px;}
+
+.copyright a { color:#666; }
+
+.copyright a:hover { color: #FFF; }
+
+.copyright2 { font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13px; color: #999; text-align: left; padding-top: 15px; text-transform: none; font-weight: normal; padding-bottom: 15px;}
+
+.copyright2 a { color: #666; }
+
+.copyright2 a:hover { color: #333; }
+
+th { background-color: #282828;	color: #b0b0b0;	cursor: pointer; padding: 15px 10px; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;	text-transform:uppercase; font-weight: 600;	font-size: 13px; letter-spacing:1px; }
+
+th small { font-size: 12px; }
+
+td, th { text-align: left; }
+
+a {	text-decoration: none; }
+
+td a { color: #2c2c2c;	display: block;	padding: 15px 10px; }
+
+th a { padding-left: 0 }
+
+td:first-of-type a { background: url(./.images/file.png) no-repeat 15px 50%; padding-left: 45px; }
+
+th:first-of-type { padding-left: 15px; }
+
+td:not(:first-of-type) a { background-image: none !important; } 
+
+tr:nth-of-type(odd) { background-color: #cecece; }
+
+tr:hover td { background-color:#65b327; }
+
+tr:hover td a {	color: #000; }
+
+/* icons for file types (icons by famfamfam) */
+
+/* images */
+table tr td:first-of-type a[href$=".jpg"], 
+table tr td:first-of-type a[href$=".png"], 
+table tr td:first-of-type a[href$=".gif"], 
+table tr td:first-of-type a[href$=".svg"], 
+table tr td:first-of-type a[href$=".jpeg"]
+{background-image: url(./.images/file.png);}
+
+/* zips */
+table tr td:first-of-type a[href$=".zip"] 
+{background-image: url(./.images/file.png);}
+
+/* css */
+table tr td:first-of-type a[href$=".css"] 
+{background-image: url(./.images/file.png);}
+
+/* docs */
+table tr td:first-of-type a[href$=".doc"],
+table tr td:first-of-type a[href$=".docx"],
+table tr td:first-of-type a[href$=".ppt"],
+table tr td:first-of-type a[href$=".pptx"],
+table tr td:first-of-type a[href$=".pps"],
+table tr td:first-of-type a[href$=".ppsx"],
+table tr td:first-of-type a[href$=".xls"],
+table tr td:first-of-type a[href$=".xlsx"]
+{background-image: url(./.images/file.png);}
+
+/* videos */
+table tr td:first-of-type a[href$=".avi"], 
+table tr td:first-of-type a[href$=".wmv"], 
+table tr td:first-of-type a[href$=".mp4"], 
+table tr td:first-of-type a[href$=".mov"], 
+table tr td:first-of-type a[href$=".m4a"]
+{background-image: url(./.images/file.png);}
+
+/* audio */
+table tr td:first-of-type a[href$=".mp3"], 
+table tr td:first-of-type a[href$=".ogg"], 
+table tr td:first-of-type a[href$=".aac"], 
+table tr td:first-of-type a[href$=".wma"] 
+{background-image: url(./.images/file.png);}
+
+/* web pages */
+table tr td:first-of-type a[href$=".html"],
+table tr td:first-of-type a[href$=".htm"],
+table tr td:first-of-type a[href$=".xml"]
+{background-image: url(./.images/file.png);}
+
+table tr td:first-of-type a[href$=".php"] 
+{background-image: url(./.images/file.png);}
+
+table tr td:first-of-type a[href$=".js"] 
+{background-image: url(./.images/file.png);}
+
+/* directories */
+table tr.dir td:first-of-type a
+{background-image: url(./.images/folder.png);}
