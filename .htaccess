@@ -1,8 +1,8 @@
-AuthUserFile /var/www/subdomains/downloads/public/stagingdownloads/.htpasswd
-AuthType Basic
-AuthName "Username: guest"
+#AuthUserFile /var/www/subdomains/downloads/public/CLIENT_NAME/.htpasswd
+#AuthType Basic
+#AuthName "Username: guest"
 
-Require valid-user
+#Require valid-user
 
 DirectoryIndex index.html index.htm default.htm index.php index.xhtml .index.php
 
