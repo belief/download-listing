@@ -1,5 +1,10 @@
 DirectoryIndex index.html index.htm default.htm index.php index.xhtml .index.php
 
+#<FilesMatch "\.(doc|jpe?g|png|odf|pdf|txt)$">
+#	ForceType application/octet-stream
+#	Header set Content-Disposition attachment
+#</FilesMatch>
+
 Options +FollowSymlinks
 RewriteEngine On
 RewriteBase /
