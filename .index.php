@@ -24,7 +24,7 @@
 	<title>Belief Client Downloads</title>
 	<link rel="stylesheet" href=".style.css">
     <script src=".sorttable.js"></script>
-    <script src=".lib/markdown.min.js"></script>
+    <script src=".markdown.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     
 
