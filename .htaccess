@@ -1,3 +1,9 @@
+AuthUserFile /var/www/subdomains/downloads/public/stagingdownloads/.htpasswd
+AuthType Basic
+AuthName "Username: guest"
+
+Require valid-user
+
 DirectoryIndex index.html index.htm default.htm index.php index.xhtml .index.php
 
 #<FilesMatch "\.(doc|jpe?g|png|odf|pdf|txt)$">
@@ -16,3 +22,4 @@ RewriteBase /
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteCond %{SCRIPT_FILENAME} -d
 RewriteRule ^([^/]+)/?$ ?dir=$1 [R,L]
+
