@@ -50,7 +50,7 @@ td:not(:first-of-type) a { background-image: none !important; }
 
 tr:nth-of-type(odd) { background-color: #cecece; }
 
-tr:hover td { background-color:#65b327; }
+tr:hover td { background-color:#85754e; }
 
 tr:hover td a {	color: #000; }
 
