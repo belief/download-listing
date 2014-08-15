@@ -1,4 +1,4 @@
-#AuthUserFile /var/www/subdomains/downloads/public/CLIENT_NAME/.htpasswd
+#AuthUserFile /var/www/subdomains/downloads/public/CLIENT_NAME_TO_REPLACE/.htpasswd
 #AuthType Basic
 #AuthName "Username: guest"
 

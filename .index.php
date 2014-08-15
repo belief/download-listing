@@ -33,7 +33,7 @@
 <body>
 	<div id="container">
     <div class="heading">
-		<h1>Staging Directory</h1>
+		<h1>CLIENT_NAME_TO_REPLACE</h1>
     </div>
 	     <?php
 	     	for($index=0; $index < $indexCount; $index++) {
