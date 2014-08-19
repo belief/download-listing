@@ -50,7 +50,7 @@
 	     			</div>
 	     			<?php
 	     		} else if ( strpos(strtolower($dirArray[$index]),'readme') !== FALSE) {
-	     			$contents = file_get_contents(rawurlencode($currentDir.'/'.$dirArray[$index]));
+	     			$contents = file_get_contents($currentDir.'/'.$dirArray[$index]);
 	     			echo '<div class="readme">';
 	     			echo nl2br($contents);
 	     			echo '</div>';
@@ -137,7 +137,7 @@
 
 						
 						// Separates directories
-						if(is_dir($dirArray[$index]) || is_dir(rawurlencode($currentDir.'/'.$dirArray[$index]) )) {
+						if(is_dir($dirArray[$index]) || is_dir($currentDir.'/'.$dirArray[$index] )) {
 							$extn="&lt;Directory&gt;"; 
 							$size="&lt;Directory&gt;"; 
 							$class="dir";
