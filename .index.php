@@ -100,7 +100,7 @@
 					
 						// Gets File Names
 						$name=$dirArray[$index];
-						$namehref=rawurlencode($currentDir.'/'.$dirArray[$index]);
+						$namehref=$currentDir.'/'.$dirArray[$index];
 						
 						// Gets Extensions 
 						$extn=findexts($dirArray[$index]); 
