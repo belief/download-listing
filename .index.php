@@ -50,7 +50,7 @@
 	     			</div>
 	     			<?php
 	     		} else if ( strpos(strtolower($dirArray[$index]),'readme') !== FALSE) {
-	     			$contents = file_get_contents(urlencode($currentDir.'/'.$dirArray[$index]));
+	     			$contents = file_get_contents(rawurlencode($currentDir.'/'.$dirArray[$index]));
 	     			echo '<div class="readme">';
 	     			echo nl2br($contents);
 	     			echo '</div>';
@@ -100,7 +100,7 @@
 					
 						// Gets File Names
 						$name=$dirArray[$index];
-						$namehref=urlencode($currentDir.'/'.$dirArray[$index]);
+						$namehref=rawurlencode($currentDir.'/'.$dirArray[$index]);
 						
 						// Gets Extensions 
 						$extn=findexts($dirArray[$index]); 
@@ -137,7 +137,7 @@
 
 						
 						// Separates directories
-						if(is_dir($dirArray[$index]) || is_dir(urlencode(($currentDir.'/'.$dirArray[$index]) )) {
+						if(is_dir($dirArray[$index]) || is_dir(rawurlencode($currentDir.'/'.$dirArray[$index]) )) {
 							$extn="&lt;Directory&gt;"; 
 							$size="&lt;Directory&gt;"; 
 							$class="dir";
@@ -148,12 +148,12 @@
 								array_pop($pathVars);
 								$newPath = implode("/",$pathVars);
 
-								$namehref='?dir='.urlencode($newPath);
+								$namehref='?dir='.rawurlencode($newPath);
 							} else {
 								if ($currentDir != $dirArray[$index] ) {
-									$namehref='?dir='.urlencode($currentDir.'/'.$dirArray[$index]);
+									$namehref='?dir='.rawurlencode($currentDir.'/'.$dirArray[$index]);
 								} else {
-									$namehref='?dir='.urlencode($dirArray[$index]);
+									$namehref='?dir='.rawurlencode($dirArray[$index]);
 								}
 							}
 						} else {
